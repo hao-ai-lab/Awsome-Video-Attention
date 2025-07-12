@@ -8,6 +8,9 @@ A curated list of recent papers on **efficient video attention** for video diffu
 
 ## Papers
 
+- **[PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models](https://arxiv.org/abs/2406.13241)** (Jun 2025)  
+  Proposes a token reordering method that transforms irregular attention into hardware-friendly block-wise patterns, simplifying both sparsification and quantization. Achieves lossless visual generation with **INT8/INT4** at ~20–30% density, yielding **1.9×–2.7×** latency speedup.
+
 - **[VMoBA: Mixture-of-Block Attention for Video Diffusion Models](https://arxiv.org/abs/2406.19482)** (Jun 2025)  
   Proposes a sparse mixture-of-block attention mechanism that partitions video tokens into 1D, 2D, and 3D blocks to exploit spatio-temporal locality, achieving ≈2.9× lower FLOPs and 1.35× faster training/inference in long video generation.
 
@@ -32,28 +35,32 @@ Proposes a trainable sparse attention mechanism that routes attention to importa
 - **[SageAttention3: Microscaling FP4 Attention and 8-Bit Training](https://arxiv.org/abs/2405.11218)** (May 2025)  
   Leverages FP4 Tensor Cores on Blackwell GPUs to reach 1038 TOPS attention throughput and explores 8-bit attention training with promising results.
 
-- **[\[ICML 25\]XAttention: Block Sparse Attention with Antidiagonal Scoring](https://arxiv.org/abs/2503.16428)** (Mar 2024)
+- **[Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light](https://arxiv.org/abs/2404.14134)** (Apr 2025)  
+  Introduces a unified framework (GNA) for local sparse attention patterns—sliding window, strided, and blocked—and provides an analytical performance simulator. Implements GNA on NVIDIA Blackwell FMHA kernels, achieving up to **1.3 PFLOPs/s** and **28%–46% end-to-end speedup** on Cosmos-7B, FLUX, and HunyuanVideo without fine-tuning.
+
+
+- **\[ICML 25\][XAttention: Block Sparse Attention with Antidiagonal Scoring](https://arxiv.org/abs/2503.16428)** (Mar 2024)
 Proposes a sparse attention method using antidiagonal scoring for efficient block pruning, achieving up to 13.5× speedup with minimal accuracy loss on long-context language and video benchmarks.
 
 - **[Training-free and Adaptive Sparse Attention for Efficient Long Video Generation](https://arxiv.org/abs/2402.16592)** (Feb 2025)  
   AdaSpa uses blockified adaptive sparse attention with online cached search to reduce PFLOPs in long video generation while maintaining fidelity.
 
-- **[\[ICML 25\]SpargeAttention: Accurate Sparse Attention Accelerating Any Model Inference](https://arxiv.org/abs/2402.15334)** (Feb 2025)  
+- **\[ICML 25\][SpargeAttention: Accurate Sparse Attention Accelerating Any Model Inference](https://arxiv.org/abs/2402.15334)** (Feb 2025)  
   Introduces a training-free two-stage filter for fast sparse attention inference. Achieves high speedup with no quality loss across LLMs, image, and video models.
 
 - **[DSV: Exploiting Dynamic Sparsity to Accelerate Large-Scale Video DiT Training](https://arxiv.org/abs/2402.12730)** (Feb 2025)  
   Leverages dynamic attention sparsity and hybrid parallelism to achieve 3.02× training throughput on large-scale VDiT models.
 
-- **[\[ICML 25\]Fast Video Generation with Sliding Tile Attention](https://arxiv.org/abs/2402.11135)** (Feb 2025)  
+- **\[ICML 25\][Fast Video Generation with Sliding Tile Attention](https://arxiv.org/abs/2402.11135)** (Feb 2025)  
   Restricts attention to a sliding 3D window, accelerating attention by 2.8–17× over FlashAttention-2 and reducing end-to-end latency by 27% without quality loss.
 
-- **[\[ICML 25\]Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity](https://arxiv.org/abs/2402.10755)** (Feb 2025)  
+- **\[ICML 25\][Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity](https://arxiv.org/abs/2402.10755)** (Feb 2025)  
   Classifies heads as spatial vs. temporal and skips irrelevant computations. Yields ≈2.3× end-to-end speedups on modern video diffusion models.
 
-- **[\[ICML 25\]SageAttention2: Efficient Attention with INT4 Quantization](https://arxiv.org/abs/2311.09913)** (Nov 2024)  
+- **\[ICML 25\][SageAttention2: Efficient Attention with INT4 Quantization](https://arxiv.org/abs/2311.09913)** (Nov 2024)  
   Combines INT4 $QK^\top$ and FP8 $PV$ with outlier smoothing to reach 3× higher throughput than FlashAttention2 while retaining high accuracy.
 
-- **[\[ICLR 24\]SageAttention: Accurate 8-Bit Attention for Plug-and-Play Inference Acceleration](https://arxiv.org/abs/2310.15488)** (Oct 2024)  
+- **\[ICLR 24\][SageAttention: Accurate 8-Bit Attention for Plug-and-Play Inference Acceleration](https://arxiv.org/abs/2310.15488)** (Oct 2024)  
   Pioneers 8-bit attention using INT8+FP16 strategy with smoothing. Achieves 2.1×–2.7× speedups over baselines with negligible accuracy drop.
 
 ---
