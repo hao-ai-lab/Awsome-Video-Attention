@@ -44,6 +44,10 @@ Proposes a trainable sparse attention mechanism that routes attention to importa
 - **[SageAttention3: Microscaling FP4 Attention and 8-Bit Training](https://arxiv.org/abs/2405.11218)** (May 2025)  
   Leverages FP4 Tensor Cores on Blackwell GPUs to reach 1038 TOPS attention throughput and explores 8-bit attention training with promising results.
 
+- **[Analysis of Attention in Video Diffusion Transformers](https://arxiv.org/abs/2504.10317)** (Apr 2025)  
+  Provides an in-depth study of attention in VDiTs, identifying three key attention properties—**Structure**, **Sparsity**, and **Sinks**. Shows that attention patterns are prompt-agnostic, sparsity methods aren’t universally effective, and attention sinks differ from language models. Suggests future directions to improve the efficiency-quality tradeoff :contentReference[oaicite:1]{index=1}.
+
+
 - **[Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light](https://arxiv.org/abs/2404.14134)** (Apr 2025)  
   Introduces a unified framework (GNA) for local sparse attention patterns—sliding window, strided, and blocked—and provides an analytical performance simulator. Implements GNA on NVIDIA Blackwell FMHA kernels, achieving up to 1.3 PFLOPs/s and 28%–46% end-to-end speedup on Cosmos-7B, FLUX, and HunyuanVideo without fine-tuning.
 
