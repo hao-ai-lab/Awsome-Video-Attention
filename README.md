@@ -8,6 +8,9 @@ A curated list of recent papers on **efficient video attention** for video diffu
 
 ## Papers
 
+- **[Sparse-vDiT: Unleashing the Power of Sparse Attention to Accelerate Video Diffusion Transformers](https://arxiv.org/abs/2506.03065)** (Jun 2025) <br>
+This paper provides a detailed analysis of attention maps in Video Diffusion Transformers and identifies three recurring sparsity patterns: diagonal, multi-diagonal, and vertical-stripe structures. It achieves 2.09× theoretical FLOP reduction and 1.76× inference speedup on CogVideoX while maintaining visual fidelity.
+
 - **[Chipmunk: Training-Free Acceleration of Diffusion Transformers with Dynamic Column-Sparse Deltas](https://arxiv.org/abs/2406.01974)** (Jun 2025)  
   Exploits step-to-step activation redundancy in DiTs via dynamic sparsity and voxel-based token reordering. Implements efficient column-sparse GPU kernels and overlapping strategies to hide latency. Achieves up to 3.72× speedup (HunyuanVideo) without retraining or quality loss.
 
@@ -25,6 +28,9 @@ A curated list of recent papers on **efficient video attention** for video diffu
 
 - **[FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion](https://arxiv.org/abs/2406.13537)** (Jun 2025)  
   Develops a training-aware co-design of FP8 quantization and structured sparsity for 3D attention, yielding 7.09× attention speedup (≈4.96× end-to-end) at 720p with negligible quality loss.
+
+- **[Interspatial Attention for Efficient 4D Human Video Generation](https://arxiv.org/abs/2505.15800)** (May 2025)<br>
+Introduces interspatial attention (ISA) mechanism for diffusion transformer-based video generation models, using relative positional encodings tailored for human videos. Achieves state-of-the-art 4D human video synthesis with motion consistency and identity preservation.
 
 - **[GRAT: Grouping First, Attending Smartly – Training-Free Acceleration for Diffusion Transformers](https://arxiv.org/abs/2406.08432)** (May 2025)  
   Proposes GRAT, a training-free strategy that partitions tokens into GPU-friendly groups and restricts attention to structured regions. Delivers up to 35.8× speedup in 8192×8192 generation on A100, while preserving quality on pretrained Flux and HunyuanVideo.
