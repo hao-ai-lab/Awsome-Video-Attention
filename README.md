@@ -9,13 +9,13 @@ A curated list of recent papers on **efficient video attention** for video diffu
 ## Papers
 
 - **[Chipmunk: Training-Free Acceleration of Diffusion Transformers with Dynamic Column-Sparse Deltas](https://arxiv.org/abs/2406.01974)** (Jun 2025)  
-  Exploits step-to-step activation redundancy in DiTs via dynamic sparsity and voxel-based token reordering. Implements efficient column-sparse GPU kernels and overlapping strategies to hide latency. Achieves up to **3.72× speedup** (HunyuanVideo) without retraining or quality loss.
+  Exploits step-to-step activation redundancy in DiTs via dynamic sparsity and voxel-based token reordering. Implements efficient column-sparse GPU kernels and overlapping strategies to hide latency. Achieves up to 3.72× speedup (HunyuanVideo) without retraining or quality loss.
 
 - **[Astraea: A GPU-Oriented Token-wise Acceleration Framework for Video Diffusion Transformers](https://arxiv.org/abs/2406.03544)** (Jun 2025)  
-  Proposes an automatic framework combining lightweight token selection and GPU-parallel sparse attention. Uses evolutionary search to optimize token budgets across timesteps. Achieves up to **2.4× speedup** on 1 GPU and **13.2×** on 8 GPUs with <0.5% quality drop on VBench.
+  Proposes an automatic framework combining lightweight token selection and GPU-parallel sparse attention. Uses evolutionary search to optimize token budgets across timesteps. Achieves up to 2.4× speedup on 1 GPU and 13.2× on 8 GPUs with <0.5% quality drop on VBench.
 
 - **[PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models](https://arxiv.org/abs/2406.13241)** (Jun 2025)  
-  Proposes a token reordering method that transforms irregular attention into hardware-friendly block-wise patterns, simplifying both sparsification and quantization. Achieves lossless visual generation with **INT8/INT4** at ~20–30% density, yielding **1.9×–2.7×** latency speedup.
+  Proposes a token reordering method that transforms irregular attention into hardware-friendly block-wise patterns, simplifying both sparsification and quantization. Achieves lossless visual generation with INT8/INT4 at ~20–30% density, yielding 1.9×–2.7× latency speedup.
 
 - **[VMoBA: Mixture-of-Block Attention for Video Diffusion Models](https://arxiv.org/abs/2406.19482)** (Jun 2025)  
   Proposes a sparse mixture-of-block attention mechanism that partitions video tokens into 1D, 2D, and 3D blocks to exploit spatio-temporal locality, achieving ≈2.9× lower FLOPs and 1.35× faster training/inference in long video generation.
@@ -27,7 +27,7 @@ A curated list of recent papers on **efficient video attention** for video diffu
   Develops a training-aware co-design of FP8 quantization and structured sparsity for 3D attention, yielding 7.09× attention speedup (≈4.96× end-to-end) at 720p with negligible quality loss.
 
 - **[GRAT: Grouping First, Attending Smartly – Training-Free Acceleration for Diffusion Transformers](https://arxiv.org/abs/2406.08432)** (May 2025)  
-  Proposes GRAT, a training-free strategy that partitions tokens into GPU-friendly groups and restricts attention to structured regions. Delivers up to **35.8× speedup** in 8192×8192 generation on A100, while preserving quality on pretrained Flux and HunyuanVideo.
+  Proposes GRAT, a training-free strategy that partitions tokens into GPU-friendly groups and restricts attention to structured regions. Delivers up to 35.8× speedup in 8192×8192 generation on A100, while preserving quality on pretrained Flux and HunyuanVideo.
 
 - **[Sparse VideoGen2: Accelerate Video Generation with Sparse Attention via Semantic-Aware Permutation](https://arxiv.org/abs/2405.18399)** (May 2025)  
   Proposes a training-free method that reorders tokens based on semantic clustering to form dense blocks. Achieves up to 2.3× speedup with minimal quality drop.
