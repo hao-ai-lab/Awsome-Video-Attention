@@ -45,7 +45,7 @@ Proposes a trainable sparse attention mechanism that routes attention to importa
   Leverages FP4 Tensor Cores on Blackwell GPUs to reach 1038 TOPS attention throughput and explores 8-bit attention training with promising results.
 
 - **[Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light](https://arxiv.org/abs/2404.14134)** (Apr 2025)  
-  Introduces a unified framework (GNA) for local sparse attention patterns—sliding window, strided, and blocked—and provides an analytical performance simulator. Implements GNA on NVIDIA Blackwell FMHA kernels, achieving up to **1.3 PFLOPs/s** and **28%–46% end-to-end speedup** on Cosmos-7B, FLUX, and HunyuanVideo without fine-tuning.
+  Introduces a unified framework (GNA) for local sparse attention patterns—sliding window, strided, and blocked—and provides an analytical performance simulator. Implements GNA on NVIDIA Blackwell FMHA kernels, achieving up to 1.3 PFLOPs/s and 28%–46% end-to-end speedup on Cosmos-7B, FLUX, and HunyuanVideo without fine-tuning.
 
 
 - **\[ICML 25\][XAttention: Block Sparse Attention with Antidiagonal Scoring](https://arxiv.org/abs/2503.16428)** (Mar 2024)
