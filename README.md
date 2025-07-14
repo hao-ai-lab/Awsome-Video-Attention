@@ -17,7 +17,7 @@ This paper provides a detailed analysis of attention maps in Video Diffusion Tra
 - **[Astraea: A GPU‑Oriented Token‑wise Acceleration Framework for Video Diffusion Transformers](https://arxiv.org/abs/2506.05096)** (Jun 2025)  
   Proposes an automatic framework combining lightweight token selection and GPU-parallel sparse attention. Uses evolutionary search to optimize token budgets across timesteps. Achieves up to 2.4× speedup on 1 GPU and 13.2× on 8 GPUs with <0.5% quality drop on VBench.
 
-- **[PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models](https://arxiv.org/abs/2406.13241)** (Jun 2025)  
+- **[PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models](https://arxiv.org/abs/2506.16054)** (Jun 2025)  
   Proposes a token reordering method that transforms irregular attention into hardware-friendly block-wise patterns, simplifying both sparsification and quantization. Achieves lossless visual generation with INT8/INT4 at ~20–30% density, yielding 1.9×–2.7× latency speedup.
 
 - **[VMoBA: Mixture‑of‑Block Attention for Video Diffusion Models](https://arxiv.org/abs/2506.23858)** (Jun 2025)  
