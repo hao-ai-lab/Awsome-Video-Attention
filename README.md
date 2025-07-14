@@ -8,19 +8,19 @@ A curated list of recent papers on **efficient video attention** for video diffu
 
 ## Papers
 
-- **[Sparse-vDiT: Unleashing the Power of Sparse Attention to Accelerate Video Diffusion Transformers](https://arxiv.org/abs/2506.03065)** (Jun 2025) <br>
+- **[Sparse-vDiT: Unleashing the Power of Sparse Attention to Accelerate Video Diffusion Transformers](https://arxiv.org/abs/2506.03065)** (Jun 2025)  
 This paper provides a detailed analysis of attention maps in Video Diffusion Transformers and identifies three recurring sparsity patterns: diagonal, multi-diagonal, and vertical-stripe structures. It achieves 2.09× theoretical FLOP reduction and 1.76× inference speedup on CogVideoX while maintaining visual fidelity.
 
-- **[Chipmunk: Training-Free Acceleration of Diffusion Transformers with Dynamic Column-Sparse Deltas](https://arxiv.org/abs/2406.01974)** (Jun 2025)  
+- **[Chipmunk: Training-Free Acceleration of Diffusion Transformers with Dynamic Column‑Sparse Deltas](https://arxiv.org/abs/2506.03275)** (Jun 2025)  
   Exploits step-to-step activation redundancy in DiTs via dynamic sparsity and voxel-based token reordering. Implements efficient column-sparse GPU kernels and overlapping strategies to hide latency. Achieves up to 3.72× speedup (HunyuanVideo) without retraining or quality loss.
 
-- **[Astraea: A GPU-Oriented Token-wise Acceleration Framework for Video Diffusion Transformers](https://arxiv.org/abs/2406.03544)** (Jun 2025)  
+- **[Astraea: A GPU‑Oriented Token‑wise Acceleration Framework for Video Diffusion Transformers](https://arxiv.org/abs/2506.05096)** (Jun 2025)  
   Proposes an automatic framework combining lightweight token selection and GPU-parallel sparse attention. Uses evolutionary search to optimize token budgets across timesteps. Achieves up to 2.4× speedup on 1 GPU and 13.2× on 8 GPUs with <0.5% quality drop on VBench.
 
 - **[PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models](https://arxiv.org/abs/2406.13241)** (Jun 2025)  
   Proposes a token reordering method that transforms irregular attention into hardware-friendly block-wise patterns, simplifying both sparsification and quantization. Achieves lossless visual generation with INT8/INT4 at ~20–30% density, yielding 1.9×–2.7× latency speedup.
 
-- **[VMoBA: Mixture-of-Block Attention for Video Diffusion Models](https://arxiv.org/abs/2406.19482)** (Jun 2025)  
+- **[VMoBA: Mixture‑of‑Block Attention for Video Diffusion Models](https://arxiv.org/abs/2506.23858)** (Jun 2025)  
   Proposes a sparse mixture-of-block attention mechanism that partitions video tokens into 1D, 2D, and 3D blocks to exploit spatio-temporal locality, achieving ≈2.9× lower FLOPs and 1.35× faster training/inference in long video generation.
 
 - **[Radial Attention: Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2406.18282)** (Jun 2025)  
@@ -41,7 +41,7 @@ Introduces interspatial attention (ISA) mechanism for diffusion transformer-base
 - **[VSA: Efficient Video Diffusion via Routing Sparse Attention](https://arxiv.org/abs/2505.13389)** (May 2025)  
 Proposes a trainable sparse attention mechanism that routes attention to important tokens in video diffusion models, reducing training FLOPs by 2.5× and cutting inference latency from 31s to 18s without degrading generation quality.
 
-- **[VORTA: Efficient Video Diffusion via Routing Sparse Attention](https://arxiv.org/abs/2405.17190)** (May 2025)  
+- **[VORTA: Efficient Video Diffusion via Routing Sparse Attention](https://arxiv.org/abs/2505.18809)** (May 2025)  
   Introduces a routing-based framework to replace full 3D attention with specialized sparse patterns during sampling. Delivers 1.76× end-to-end speedup (14.4× with distillation) without quality degradation.
 
 - **[FastCAR: Cache Attentive Replay for Fast Auto-regressive Video Generation on the Edge](https://arxiv.org/abs/2405.16828)** (May 2025)  
