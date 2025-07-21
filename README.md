@@ -32,6 +32,9 @@ This paper provides a detailed analysis of attention maps in Video Diffusion Tra
 - **[Interspatial Attention for Efficient 4D Human Video Generation](https://arxiv.org/abs/2505.15800)** (May 2025)<br>
 Introduces interspatial attention (ISA) mechanism for diffusion transformer-based video generation models, using relative positional encodings tailored for human videos. Achieves state-of-the-art 4D human video synthesis with motion consistency and identity preservation.
 
+- **[MAGI-1: Autoregressive Video Generation at Scale](https://arxiv.org/abs/2505.13211)** (May 2025)
+`MagiAttention` is a distributed attention mechanism, or context-parallel (CP) strategy, which aims to support a wide variety of attention mask types with **kernel-level flexibility**, while achieving **linear scalability** with respect to context-parallel (CP) size across a broad range of scenarios, particularly suitable for training tasks involving <u><em>ultra-long, heterogeneous mask</em></u> training like video-generation for Magi-1.
+
 - **[GRAT: Grouping First, Attending Smartly – Training-Free Acceleration for Diffusion Transformers](https://arxiv.org/abs/2505.14687)** (May 2025)  
   Proposes GRAT, a training-free strategy that partitions tokens into GPU-friendly groups and restricts attention to structured regions. Delivers up to 35.8× speedup in 8192×8192 generation on A100, while preserving quality on pretrained Flux and HunyuanVideo.
 
