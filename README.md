@@ -29,6 +29,9 @@ This paper provides a detailed analysis of attention maps in Video Diffusion Tra
 - **[FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion](https://arxiv.org/abs/2506.04648)** (Jun 2025)  
   Develops a training-aware co-design of FP8 quantization and structured sparsity for 3D attention, yielding 7.09× attention speedup (≈4.96× end-to-end) at 720p with negligible quality loss.
 
+- **\[MICCAI 2025\][FEAT: Full-Dimensional Efficient Attention Transformer for Medical Video Generation](https://arxiv.org/abs/2506.04956)** (Jun 2025)<br>
+Sequential spatial-temporal-channel attention with linear complexity; FEAT-S matches Endora with only 23% parameters.
+
 - **[Interspatial Attention for Efficient 4D Human Video Generation](https://arxiv.org/abs/2505.15800)** (May 2025)<br>
 Introduces interspatial attention (ISA) mechanism for diffusion transformer-based video generation models, using relative positional encodings tailored for human videos. Achieves state-of-the-art 4D human video synthesis with motion consistency and identity preservation.
 
@@ -50,12 +53,14 @@ Proposes a trainable sparse attention mechanism that routes attention to importa
 - **[FastCAR: Cache Attentive Replay for Fast Auto-regressive Video Generation on the Edge](https://arxiv.org/abs/2505.14709)** (May 2025)  
   Exploits temporal redundancy by caching MLP outputs between frames to skip redundant decoding steps. Achieves >2.1× faster decoding and better energy efficiency for edge devices.
 
+- **[VSA: Faster Video Diffusion with Trainable Sparse Attention](https://arxiv.org/abs/2505.13389)** (May 2025)<br>
+ Two-stage coarse-to-fine sparse kernel yielding 6× attention speed-up and 2.53× training FLOP reduction on Wan-2.1 with no loss in diffusion loss.
+
 - **[SageAttention3: Microscaling FP4 Attention and 8-Bit Training](https://arxiv.org/abs/2505.11594)** (May 2025)  
   Leverages FP4 Tensor Cores on Blackwell GPUs to reach 1038 TOPS attention throughput and explores 8-bit attention training with promising results.
 
 - **[Analysis of Attention in Video Diffusion Transformers](https://arxiv.org/abs/2504.10317)** (Apr 2025)  
   Provides an in-depth study of attention in VDiTs, identifying three key attention properties—**Structure**, **Sparsity**, and **Sinks**. Shows that attention patterns are prompt-agnostic, sparsity methods aren’t universally effective, and attention sinks differ from language models. Suggests future directions to improve the efficiency-quality tradeoff :contentReference[oaicite:1]{index=1}.
-
 
 - **[Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light](https://arxiv.org/abs/2504.16922)** (Apr 2025)  
   Introduces a unified framework (GNA) for local sparse attention patterns—sliding window, strided, and blocked—and provides an analytical performance simulator. Implements GNA on NVIDIA Blackwell FMHA kernels, achieving up to 1.3 PFLOPs/s and 28%–46% end-to-end speedup on Cosmos-7B, FLUX, and HunyuanVideo without fine-tuning.
@@ -84,6 +89,9 @@ Proposes a sparse attention method using antidiagonal scoring for efficient bloc
 
 - **\[ICLR 24\][SageAttention: Accurate 8-Bit Attention for Plug-and-Play Inference Acceleration](https://arxiv.org/abs/2410.02367)** (Oct 2024)  
   Pioneers 8-bit attention using INT8+FP16 strategy with smoothing. Achieves 2.1×–2.7× speedups over baselines with negligible accuracy drop.
+
+- **\[WACV 2025\][Efficient Video Object Segmentation via Modulated Cross-Attention Memory](https://arxiv.org/abs/2403.17937)** (Mar 2024)<br>
+Long-term modulated cross-attention memory cuts GPU memory by 87% and lifts speed to 37 FPS on LVOS with 7.6× acceleration.
 
 ---
 
